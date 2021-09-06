@@ -8,3 +8,6 @@ app for practicing android basics
 - Activity LifeCycle
 - Fragments
 - Navigation Component
+- ViewModel
+- LiveData
+- View Binding in Fragment/Activity
