@@ -62,6 +62,30 @@
                 android:layout_height="wrap_content"
                 android:text="Navigation Component" />
 
+            <Button
+                android:id="@+id/viewModel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ViewModel" />
+
+            <Button
+                android:id="@+id/viewModelLD"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:text="ViewModel with LiveData" />
+
+            <Button
+                android:id="@+id/view_Binding_Activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View Binding Activity" />
+
+            <Button
+                android:id="@+id/VBFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View Binding Fragment" />
+
         </LinearLayout>
     </ScrollView>
 

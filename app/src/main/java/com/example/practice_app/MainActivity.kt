@@ -14,6 +14,10 @@ class MainActivity : AppCompatActivity() {
   lateinit var activitylifecycle : Button
   lateinit var basicFragment : Button
   lateinit var navigationComponentButton : Button
+  lateinit var viewModelButton : Button
+  lateinit var viewModelLDButton : Button
+  lateinit var viewBindingActvityButton : Button
+  lateinit var viewBindingFragmentButton : Button
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
@@ -26,6 +30,10 @@ class MainActivity : AppCompatActivity() {
     activitylifecycle = findViewById(R.id.activity_lifecycle)
     basicFragment = findViewById(R.id.basic_fragment)
     navigationComponentButton = findViewById(R.id.navigation_component)
+    viewModelButton = findViewById(R.id.viewModel)
+    viewModelLDButton =findViewById(R.id.viewModelLD)
+    viewBindingActvityButton = findViewById(R.id.view_Binding_Activity)
+    viewBindingFragmentButton = findViewById(R.id.VBFragment)
 
     toastButton.setOnClickListener{
       Toast.makeText(applicationContext, "This is a test", Toast.LENGTH_SHORT).show()
@@ -60,6 +68,25 @@ class MainActivity : AppCompatActivity() {
     }
 
     navigationComponentButton.setOnClickListener{
+      val Intent = Intent(applicationContext, NavigationContainer::class.java)
+      startActivity(Intent)
+    }
+
+    viewModelButton.setOnClickListener{
+      val Intent = Intent(applicationContext, NavigationContainer::class.java)
+      startActivity(Intent)
+    }
+
+    viewModelLDButton.setOnClickListener{
+      val Intent = Intent(applicationContext, NavigationContainer::class.java)
+      startActivity(Intent)
+    }
+    viewBindingActvityButton.setOnClickListener{
+      val Intent = Intent(applicationContext, VBActivity::class.java)
+      startActivity(Intent)
+    }
+
+    viewBindingFragmentButton.setOnClickListener{
       val Intent = Intent(applicationContext, NavigationContainer::class.java)
       startActivity(Intent)
     }

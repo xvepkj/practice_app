@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Practice_app">
-        <activity android:name=".NavigationContainer"></activity>
+        <activity
+            android:name=".VBActivity"
+            android:exported="true" />
+        <activity android:name=".NavigationContainer" />
         <activity android:name=".LifeCycle" />
         <activity android:name=".ServiceActivity" />
         <activity android:name=".IntentActivity" />
