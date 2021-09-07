@@ -2,6 +2,7 @@ package com.example.practice_app
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -21,6 +22,7 @@ class MainActivity : AppCompatActivity() {
   lateinit var viewBindingFragmentButton : Button
 
   override fun onCreate(savedInstanceState: Bundle?) {
+    Log.d("Merge","MergeTest")
     AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_main)
