@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 
 class MainActivity : AppCompatActivity() {
   lateinit var toastButton : Button
@@ -20,8 +21,10 @@ class MainActivity : AppCompatActivity() {
   lateinit var viewBindingFragmentButton : Button
 
   override fun onCreate(savedInstanceState: Bundle?) {
+    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_main)
+
     toastButton = findViewById(R.id.toast_button)
     explicitIntent = findViewById(R.id.explicit_intent)
     implicitIntent = findViewById(R.id.implicit_intent)
