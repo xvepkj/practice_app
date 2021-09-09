@@ -92,6 +92,12 @@
                 android:layout_height="wrap_content"
                 android:text="Foreground Service" />
 
+            <Button
+                android:id="@+id/nav_BA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Extending the Binf" />
+
         </LinearLayout>
     </ScrollView>
 
