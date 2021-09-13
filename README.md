@@ -11,3 +11,4 @@ app for practicing android basics
 - ViewModel
 - LiveData
 - View Binding in Fragment/Activity
+- Foreground Services
