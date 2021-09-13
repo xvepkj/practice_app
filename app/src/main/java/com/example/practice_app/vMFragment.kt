@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 
 class vMFragment : Fragment() {
     private val viewModel : VMViewModel by viewModels()
@@ -19,20 +20,21 @@ class vMFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Log.d("Fragment","onCreate Called!")
+        Log.d("Fragment LifeCycle","onCreate Called!")
     }
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        Log.d("Fragment","onCreateView Called!")
+        Log.d("Fragment LifeCycle","onCreateView Called!")
         return inflater.inflate(R.layout.v_m_fragment, container, false)
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        Log.d("Fragment","onViewCreated Called!")
+        Log.d("Fragment LifeCycle","onViewCreated Called!")
         val addButton : Button = view.findViewById(R.id.addButton)
         val implicitActionButton : Button = view.findViewById(R.id.implicit_action_button)
+        val navToAnotherFragment : Button = view.findViewById(R.id.nav_AnotherFrag)
         val currentCount : TextView = view.findViewById(R.id.curentCount)
         currentCount.text = viewModel.count.toString()
         addButton.setOnClickListener{
@@ -47,32 +49,35 @@ class vMFragment : Fragment() {
             }
             startActivity(sendIntent)
         }
+        navToAnotherFragment.setOnClickListener{
+            findNavController().navigate(R.id.action_vMFragment_to_VBFragment2)
+        }
     }
     override fun onStart() {
         super.onStart()
-        Log.d("Fragment","onStart Called!")
+        Log.d("Fragment LifeCycle","onStart Called!")
     }
 
     override fun onResume() {
         super.onResume()
-        Log.d("Fragment","onResume Called!")
+        Log.d("Fragment LifeCycle","onResume Called!")
     }
 
     override fun onPause() {
         super.onPause()
-        Log.d("Fragment","onPause Called!")
+        Log.d("Fragment LifeCycle","onPause Called!")
     }
     override fun onStop() {
         super.onStop()
-        Log.d("Fragment", "onStop Called!")
+        Log.d("Fragment LifeCycle", "onStop Called!")
     }
     override fun onDestroyView() {
         super.onDestroyView()
-        Log.d("Fragment","onDestroyView Called!")
+        Log.d("Fragment LifeCycle","onDestroyView Called!")
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.d("Fragment","onDestroy Called!")
+        Log.d("Fragment LifeCycle","onDestroy Called!")
     }
 }

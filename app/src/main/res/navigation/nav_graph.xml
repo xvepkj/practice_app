@@ -36,7 +36,11 @@
         android:id="@+id/vMFragment"
         android:name="com.example.practice_app.vMFragment"
         android:label="v_m_fragment"
-        tools:layout="@layout/v_m_fragment" />
+        tools:layout="@layout/v_m_fragment" >
+        <action
+            android:id="@+id/action_vMFragment_to_VBFragment2"
+            app:destination="@id/VBFragment2" />
+    </fragment>
     <fragment
         android:id="@+id/vMwithLiveData"
         android:name="com.example.practice_app.vMwithLiveData"

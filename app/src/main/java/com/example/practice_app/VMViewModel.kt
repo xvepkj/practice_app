@@ -11,11 +11,11 @@ class VMViewModel : ViewModel() {
         _count+=1
     }
     init {
-        Log.d("vM","viewModel Created!")
+        Log.d("Fragment LifeCycle","viewModel Created!")
     }
 
     override fun onCleared() {
         super.onCleared()
-        Log.d("vM","viewModel Destroyed!")
+        Log.d("Fragment LifeCycle","viewModel Destroyed!")
     }
 }
