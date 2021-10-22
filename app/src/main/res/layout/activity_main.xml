@@ -8,8 +8,10 @@
 
     <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="743dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.53"
         app:layout_constraintStart_toStartOf="parent"
@@ -97,6 +99,42 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Extending the Binf" />
+
+            <Button
+                android:id="@+id/nav_Glide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Glide" />
+
+            <Button
+                android:id="@+id/nav_picasso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Picasso" />
+
+            <Button
+                android:id="@+id/nav_fresco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fresco" />
+
+            <Button
+                android:id="@+id/nav_coil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Coil" />
+
+            <Button
+                android:id="@+id/nav_asynctask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Async Task" />
+
+            <Button
+                android:id="@+id/nav_font"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Font" />
 
         </LinearLayout>
     </ScrollView>

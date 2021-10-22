@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_navigation_fragment1_to_VBFragment2"
             app:destination="@id/VBFragment2" />
+        <action
+            android:id="@+id/action_navigation_fragment1_to_relative_layout"
+            app:destination="@id/relative_layout" />
     </fragment>
     <fragment
         android:id="@+id/navigation_fragment2"
@@ -50,4 +53,9 @@
         android:name="com.example.practice_app.VBFragment"
         android:label="fragment_v_b"
         tools:layout="@layout/fragment_v_b" />
+    <fragment
+        android:id="@+id/relative_layout"
+        android:name="com.example.practice_app.relative_layout"
+        android:label="fragment_relative_layout"
+        tools:layout="@layout/fragment_relative_layout" />
 </navigation>

@@ -50,7 +50,9 @@ class vMFragment : Fragment() {
             startActivity(sendIntent)
         }
         navToAnotherFragment.setOnClickListener{
+
             findNavController().navigate(R.id.action_vMFragment_to_VBFragment2)
+
         }
     }
     override fun onStart() {

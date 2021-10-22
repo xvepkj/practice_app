@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.app.AppCompatDelegate
 import android.app.NotificationManager
 
 import android.app.NotificationChannel
@@ -28,6 +27,12 @@ class MainActivity : AppCompatActivity() {
   lateinit var viewBindingActvityButton : Button
   lateinit var viewBindingFragmentButton : Button
   lateinit var fsButton : Button
+  lateinit var glideButton : Button
+  lateinit var picassoButton : Button
+  lateinit var frescoButton : Button
+  lateinit var coilButton : Button
+  lateinit var asyncTaskButton: Button
+  lateinit var fontButton: Button
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
@@ -46,6 +51,12 @@ class MainActivity : AppCompatActivity() {
     viewBindingActvityButton = findViewById(R.id.view_Binding_Activity)
     viewBindingFragmentButton = findViewById(R.id.VBFragment)
     fsButton = findViewById(R.id.nav_FS)
+    glideButton = findViewById(R.id.nav_Glide)
+    picassoButton = findViewById(R.id.nav_picasso)
+    frescoButton = findViewById(R.id.nav_fresco)
+    coilButton = findViewById(R.id.nav_coil)
+    asyncTaskButton = findViewById(R.id.nav_asynctask)
+    fontButton = findViewById(R.id.nav_font)
 
     toastButton.setOnClickListener{
       Toast.makeText(applicationContext, "This is a test", Toast.LENGTH_SHORT).show()
@@ -105,6 +116,33 @@ class MainActivity : AppCompatActivity() {
 
     fsButton.setOnClickListener{
       val Intent = Intent(applicationContext, FSActivity::class.java)
+      startActivity(Intent)
+    }
+
+    glideButton.setOnClickListener{
+      val Intent = Intent(applicationContext, GlideActivity::class.java)
+      startActivity(Intent)
+    }
+
+    picassoButton.setOnClickListener{
+      val Intent = Intent(applicationContext, PicassoActivity::class.java)
+      startActivity(Intent)
+    }
+
+    frescoButton.setOnClickListener{
+      val Intent = Intent(applicationContext, FrescoActivity::class.java)
+      startActivity(Intent)
+    }
+    coilButton.setOnClickListener{
+      val Intent = Intent(applicationContext, CoilActivity::class.java)
+      startActivity(Intent)
+    }
+    asyncTaskButton.setOnClickListener{
+      val Intent = Intent(applicationContext, AsyncTaskActivity::class.java)
+      startActivity(Intent)
+    }
+    fontButton.setOnClickListener{
+      val Intent = Intent(applicationContext, FontActivity::class.java)
       startActivity(Intent)
     }
 

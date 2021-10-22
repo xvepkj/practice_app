@@ -49,6 +49,7 @@ class navigation_fragment1 : Fragment() {
         val navtoviewModelFragment : Button = view.findViewById(R.id.nav_viewModelFragment)
         val navToViewModelWithLiveDataFragment : Button = view.findViewById(R.id.viewModelwithLiveData)
         val navtoVBF : Button = view.findViewById(R.id.nav_VBFragment)
+        val navtoRL : Button = view.findViewById(R.id.nav_relativeLayout)
 
         navigateToFragment2.setOnClickListener{
             findNavController().navigate(R.id.action_navigation_fragment1_to_navigation_fragment2)
@@ -68,6 +69,9 @@ class navigation_fragment1 : Fragment() {
         }
         navtoVBF.setOnClickListener{
             findNavController().navigate(R.id.action_navigation_fragment1_to_VBFragment2)
+        }
+        navtoRL.setOnClickListener{
+            findNavController().navigate(R.id.action_navigation_fragment1_to_relative_layout)
         }
     }
 

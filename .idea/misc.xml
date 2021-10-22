@@ -3,19 +3,32 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/font/homemade_apple.xml" value="0.15208333333333332" />
         <entry key="app/src/main/res/layout/activity_activity.xml" value="0.21875" />
+        <entry key="app/src/main/res/layout/activity_asyn_task.xml" value="0.16770833333333332" />
+        <entry key="app/src/main/res/layout/activity_async_task.xml" value="0.16770833333333332" />
         <entry key="app/src/main/res/layout/activity_b.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_binding.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_coil.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_font.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_foreground_service.xml" value="0.1140625" />
+        <entry key="app/src/main/res/layout/activity_fresco.xml" value="0.23278985507246377" />
         <entry key="app/src/main/res/layout/activity_fsactivity.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_glide.xml" value="0.14361702127659576" />
         <entry key="app/src/main/res/layout/activity_life_cycle.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_navigation_container.xml" value="0.17083333333333334" />
+        <entry key="app/src/main/res/layout/activity_picasso.xml" value="0.15070921985815602" />
         <entry key="app/src/main/res/layout/activity_service.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_vbactivity.xml" value="0.14791666666666667" />
         <entry key="app/src/main/res/layout/fragment_.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_navigation_fragment1.xml" value="0.17083333333333334" />
         <entry key="app/src/main/res/layout/fragment_navigation_fragment2.xml" value="0.17083333333333334" />
+        <entry key="app/src/main/res/layout/fragment_relative_layout.xml" value="0.16304347826086957" />
+        <entry key="app/src/main/res/layout/fragment_table_layout.xml" value="0.375" />
         <entry key="app/src/main/res/layout/fragment_v_b.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/practice_layout_1.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/relative_layout.xml" value="0.16304347826086957" />
         <entry key="app/src/main/res/layout/v_m_fragment.xml" value="0.18541666666666667" />
         <entry key="app/src/main/res/layout/v_mwith_live_data_fragment.xml" value="0.13677811550151975" />
       </map>
