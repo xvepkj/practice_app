@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_main)
-
+    //haha
     toastButton = findViewById(R.id.toast_button)
     explicitIntent = findViewById(R.id.explicit_intent)
     implicitIntent = findViewById(R.id.implicit_intent)
